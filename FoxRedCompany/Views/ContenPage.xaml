@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FoxRedCompany.Views.ContenPage"
+             Title="ContenPage"
+            xmlns:views="clr-namespace:FoxRedCompany.Views"
+             xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+                android:TabbedPage.ToolbarPlacement="Bottom"
+            BackgroundColor="#bf0425"
+            BarTextColor="#bf0425"
+            >
+    <NavigationPage IconImageSource="home.png">
+        <x:Arguments>
+            <views:PaginaInicio Title="Inicio" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage IconImageSource="compra.png">
+        <x:Arguments>
+            <views:FormularioCompra/>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage IconImageSource="usuario.png">
+        <x:Arguments>
+            <views:Usuario/>
+        </x:Arguments>
+    </NavigationPage>
+    
+</TabbedPage>
