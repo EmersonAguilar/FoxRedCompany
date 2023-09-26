@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FoxRedCompany.Views.PaginaInicio"
-             >
+             BackgroundColor="White">
     <StackLayout >
         <Grid RowDefinitions="*,*" >
         <VerticalStackLayout>
-        <Label Text="Hola"/>
+        <Label Text="Hola" TextColor="Black"/>
                 <Grid RowDefinitions="*,*" VerticalOptions="Fill" >
             <VerticalStackLayout VerticalOptions="Center">
                 <CarouselView x:Name="carouselView" IndicatorView="indicatorview">
@@ -14,8 +14,8 @@
                         <DataTemplate>
                             <VerticalStackLayout BackgroundColor="#E0E4FF" Padding="10">
                                 <Image WidthRequest="150" HeightRequest="150" Source="{Binding Imagen}"/>
-                                <Label FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="{Binding Title}"/>
-                                <Label FontSize="Small"  HorizontalTextAlignment="Center" Text="{Binding Description}"/>
+                                <Label FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="{Binding Title}" TextColor="Black"/>
+                                <Label FontSize="Small"  HorizontalTextAlignment="Center" Text="{Binding Description}" TextColor="Black"/>
                             </VerticalStackLayout>
                         </DataTemplate>
                     </CarouselView.ItemTemplate>

@@ -14,7 +14,7 @@
             <views:PaginaInicio Title="Inicio" />
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage IconImageSource="compra.png">
+    <NavigationPage IconImageSource="crr.png">
         <x:Arguments>
             <views:FormularioCompra/>
         </x:Arguments>
