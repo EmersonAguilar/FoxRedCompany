@@ -55,6 +55,7 @@
 	  <None Remove="Resources\Images\fix2.png" />
 	  <None Remove="Resources\Images\fo.png" />
 	  <None Remove="Resources\Images\Home.png" />
+	  <None Remove="Resources\Images\laptop.png" />
 	  <None Remove="Resources\Images\li.jpg" />
 	  <None Remove="Resources\Images\sa.jpg" />
 	  <None Remove="Resources\Images\sev.jpg" />
@@ -74,6 +75,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Views\ContenPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\DetalleProducto.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\FormularioCompra.xaml">
